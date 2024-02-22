@@ -1,0 +1,48 @@
+select emp_name, salary+(15/100)*salary AS no of dollars '$' employees-------4
+
+5)select emp_name||' '||job as employee and job from employees
+
+6)select emp_name||' '||job as employee and job from employees
+
+select emp_name from employee where designation = 'manager'
+
+7) SELECT emp_id,
+       emp_name,
+       salary,
+       to_char(hire_date,'MONTH DD,YYYY')
+FROM employees;
+
+to_char()
+
+To char
+
+
+8) SELECT count(trim(emp_name))
+FROM employees;
+
+
+21)SELECT *
+FROM employees
+WHERE EXTRACT(YEAR
+              FROM age(CURRENT_DATE, hire_date)) > 27
+
+
+Select * from emp where to_char(sysdate-hire_date, 'yyyy')>=27
+
+
+
+
+
+
+
+
+28)SELECT emp_id,
+       emp_name,
+       salary,
+       age(CURRENT_DATE, hire_date) "Experience"
+FROM employees
+WHERE manager_id=68319;
+
+
+
+

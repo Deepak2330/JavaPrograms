@@ -1,0 +1,80 @@
+
+
+Creating object of a class
+--------------------------
+Declaration
+Instantiation ---new
+Initialization
+
+stud     s        =   new  stud();--constructor
+
+class    object       newoperator
+
+
+
+Defining a class
+----------------
+public class <class-name>
+{
+type instant variable1;//class variables
+type instant variable2;           |
+------
+------
+type method1(parameter list)//member method
+{
+//body of the method1
+}
+type method2(parameter list)
+{
+//body of the method2
+}
+
+---
+----
+}
+
+public--access specifier
+
+class-reserved word
+
+class-name--referred tag
+
+Contents of a class
+-------------------
+
+1.External Wrapper
+----------------
+Class declaration enclosing inner part with in a {}
+
+2.Internal Contents
+        - instant variables
+        - constructors
+        - member methods
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+1) class Dog
+{
+}
+class Poodle extends Dog
+{
+public static void main(String[] args){
+Dog ruff = new Poodle();
+Poodle puddles = (Poodle)ruff; /* line no 6*/
+}
+}
+
+What type of casting is occurring at line no 6?
+
+
+UpCasting
+DownCasting
+BroadCasting
+None of the Options
+
+
+--------------------------------------------------------------------------------
+
+2)  Given:
+class Mammal 
+{
+}
+class Raccoon extends Mammal 
+{
+Mammal m = new Mammal();
+}
+class BabyRaccoon extends Mammal 
+{ 
+}
+
+Which statements are true?
+A. Raccoon is-a Mammal.
+B. Raccoon has-a Mammal.
+C. BabyRaccoon is-a Mammal.
+D. BabyRaccoon is-a Raccoon.
+E. BabyRaccoon has-a Mammal.
+F.BabyRaccoon is-a BabyRaccoon.
+( Choose one )
+		A,B,D,C,F
+		A,C,D,E,F
+		A,D,E
+		A,B,C
+
+
+                                
+
+                                      Mammal
+                                   /        \
+                            
+                               Raccoon       Baby Raccoon
+                                
+                  Mammal m=new Mammal()
+                              
+
+A,B,C,F
+ 
+          
+
+
+
+
+
+
+
+
+
+
+        
+

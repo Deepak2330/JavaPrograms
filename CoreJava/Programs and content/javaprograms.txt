@@ -1,0 +1,150 @@
+Fibonacci
+-------------
+import java.util.*;
+import java.io.*;
+        public class Fibonacci {
+            public static void main(String[] args) {
+                int n, t1 = 0, t2 = 1;
+                Scanner sc = new Scanner(System.in);
+                System.out.println("Enter the Number of Fibonacci number to be printed");
+                n= sc.nextInt();                
+                
+                System.out.print("First " + n + " terms: ");
+                for (int i = 1; i <= n; ++i)
+                {
+                    System.out.print(t1+" ");
+                    int sum = t1 + t2;
+                    t1 = t2;
+                    t2 = sum;
+                }
+            }
+                        
+    }
+
+Check Palindrome string and print
+-------------------------------------
+import java.util.Scanner;
+ 
+class Chkpalind
+{
+   public static void main(String args[])
+   {
+      String str, rev = "";
+      Scanner sc = new Scanner(System.in);
+ 
+      System.out.println("Enter a string:");
+      str = sc.nextLine();
+ 
+      int length = str.length();
+ 
+      for ( int i = length - 1; i >= 0; i-- )
+         rev = rev + str.charAt(i);
+ 
+      if (str.equals(rev))
+      {
+         System.out.println(str+" is a palindrome");
+         System.out.println("Rev str is: "+rev);
+      }
+      else
+      {
+         System.out.println(str+" is not a palindrome");
+         System.out.println("Rev str is: "+rev);
+      }
+ 
+   }
+}
+
+------------------
+import java.util.*;
+public class Neon
+{
+    public static void main(String args[])
+    {
+        Scanner ob=new Scanner(System.in);
+        System.out.println("Enter the number to check neon number or not");
+        int num=ob.nextInt();
+        int square=num*num;
+        int sum=0;
+        while(square!=0)//Loop to find the sum of digits.
+        {
+            int a=square%10;
+            sum=sum+a;
+            square=square/10;
+        }
+        if(sum==num)
+        {
+            System.out.println(num+" is a Neon Number.");
+        }
+        else
+        {
+            System.out.println(num+" is not a Neon Number.");
+        }
+    }
+}
+
+Multiplication Table:
+----------------------
+import java.util.*;
+ 
+class Multi
+{
+      public static void main(String args[])
+      {
+        int n, c;
+        System.out.println("Enter an integer to print it's multiplication table");
+        Scanner in = new Scanner(System.in);
+        n = in.nextInt();
+        System.out.println("Multiplication table of " + n);
+     
+        for (c = 1;c <= 10; c++)
+          System.out.println(n + "*" + c + " = " + (n*c));
+      }
+    }
+GCD:
+----
+{
+    public static void main(String[] args) {
+        int n1 = 81, n2 = 153, gcd = 1;
+        for(int i = 1; i <= n1 && i <= n2; ++i)
+        {
+            // Checks if i is factor of both integers
+            if(n1 % i==0 && n2 % i==0)
+                gcd = i;
+        }
+        System.out.printf("G.C.D of %d and %d is %d", n1, n2, gcd);
+    }
+}
+
+Sum of even and odd:
+-------------------
+import java.util.Scanner;
+ 
+class sumevenodd
+{
+    public static void main(String[] args) 
+    {
+        int n, sumE = 0, sumO = 0;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter the number of numbers you want to enter:");
+        n = s.nextInt();
+        int[] a = new int[n];
+        System.out.println("Enter the elements of the array:");
+        for(int i = 0; i < n; i++)
+        {
+            a[i] = s.nextInt();
+        }
+        for(int i = 0; i < n; i++)
+        {
+            if(a[i] % 2 == 0)
+            {
+                sumE = sumE + a[i];
+            }
+            else
+            {
+                sumO = sumO + a[i];
+            }
+        }
+        System.out.println("Sum of Even Numbers:"+sumE);
+        System.out.println("Sum of Odd Numbers:"+sumO);
+    }
+}

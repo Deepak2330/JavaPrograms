@@ -1,0 +1,175 @@
+Branching and Iteration
+----------------------
+
+Control statements
+------------------
+1.Conditional control statements
+
+      -simple if
+      -if..else
+      --if..else-if..else(if..else-if ladder)
+      --nested if
+      --case control structure
+
+2. Looping or iterative statements
+      - for, while ,do..while
+
+3.Jumping statement
+break,continue
+
+1. simple if
+------------
+
+ if(condiion)
+  statement(s);
+
+2.if..else
+----------
+ if(conditon)
+ statement(s);
+ else
+ statement;
+
+3. if ..else-if..else
+---------------------
+if(condition)
+ statement(s);
+ else if(condition)
+ statement(s);
+else if(condition)
+ statement(s);
+......
+
+else
+   statement(s);
+
+4.nested if
+----------
+if(cond)
+{
+if(cond)
+{
+statement(s);
+}
+}
+
+Case control structure
+----------------------
+switch(expression)
+{
+case <constant 1>: statement(s);
+                   break;
+case <constant 2>: statement(s);
+                   break;
+case <constant 3>: statement(s);
+                   break;
+
+.....
+
+
+default: statement(s);
+}
+
+Looping statements
+------------------
+1.while
+-------
+initialization;
+while(test condition)
+{
+statement(s);
+increment/decrement;
+}
+
+2.do..while
+-------
+initialization;
+do
+{
+statement(s);
+increment/decrement;
+}
+while(test condtion);
+
+3.for
+------
+for(initialization;test condition;increment/decrement)
+{
+statement(s);
+}
+
+
+break;
+continue;
+
+Arrays
+------
+collection of similar elements under a common name
+
+1.single dim --row or col
+2.multi
+    -- double --row * col...matrix
+    -- three
+
+ int a[]=new int[5];
+
+   bodmas
+
+2.sno=1
+m1,m2,m3,m4,m5
+
+calculate tot,avg
+
+3. eno
+   basicpay
+   hra
+   da
+   ta
+   gross
+   net
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

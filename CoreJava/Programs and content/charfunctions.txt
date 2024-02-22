@@ -1,0 +1,81 @@
+packages
+access controls
+strings
+wrapper classes
+
+Strings
+-------
+Ascii code
+
+Syntax:
+-----
+<data-type><variable>=<'character-literal'>;
+
+Character
+---------
+char ch='a';
+
+String
+------
+String s="Hello";// 'H','e','l','l','o'
+String s1=new String("Hello");
+String s2="abc";
+String s3="";
+
+Character Functions
+-------------------
+
+1. Character.isLetter()
+-----------------------
+alphabet..boolean value is returned
+
+eg:boolean b=Character.isLetter('h');--true
+
+2.Character.isDigit()--number
+------------------------------
+eg: boolean b=Character.isDigit('9');
+
+
+3.Character.isLetterOrDigit()--character or letter
+---------------------------
+eg: boolean b=Character.isLetterOrDigit('A');
+
+4. Character.isWhiteSpace()--
+----------------------------
+
+
+eg:boolean b=Character.isWhiteSpace('');
+
+
+5.Character.isUpperCase()
+-------------------------
+
+eg:boolean b= Character.isUpperCase('A');
+
+6.Character.isLowerCase()
+-------------------------
+
+eg:boolean b= Character.isLowerCase('a');
+
+7. Character.toLowerCase()
+--------------------------
+
+eg: char c= Character.toLowerCase('A');//a
+
+8. Character.toUpperCase()
+--------------------------
+
+eg: char ch= Character.toLowerCase('a');//A
+
+
+
+
+
+
+
+
+
+
+
+
+

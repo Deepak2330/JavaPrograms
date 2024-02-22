@@ -1,0 +1,48 @@
+Algorithms and Flowcharts
+------------------------
+
+
+def
+
+Flowchart
+--------
+
+start(oval)
+input values(paralellogram)
+compute the area(rectangle)
+display the output(paralellogram)
+stop(oval)
+
+byte,boolean,shortint,char,long,float,double
+
+int a=12;
+control statements
+------------------
+int a[10];//c and c++
+
+int a[]=new int[];
+
+int a[]={2,3};
+
+
+
+sequential
+function call
+branching
+looping
+
+function
+---------
+
+<return-type>function-name(arguement list)---data-type variable
+{
+statement(s);
+}
+
+
+
+
+
+
+
+

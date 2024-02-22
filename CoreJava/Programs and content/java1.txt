@@ -1,0 +1,55 @@
+OOPs concepts
+-------------
+Encapsulation
+Inheritance
+Polymorphism
+
+classes
+objects
+Data Abstraction
+Dynamic Binding
+
+Message Passing
+
+JVM
+JRE
+JDK
+
+UTF
+
+import <package-name>;
+
+public class <classname> extends <subclasses> implements <interfaces>
+{
+public static void main(String str[])
+{
+Statement(s);
+}
+}
+
+Packages
+--------
+1. predefined or built-in package or JAVA API
+2.user defined package
+
+1.Built-in
+
+java.io
+java.awt
+java.sql
+java.util
+javax.sevlet.http
+
+2. User-defined
+---------------
+
+Syntax:package <packagename>;
+
+example  : package pack1;
+
+package [packagename1],[.packagename2]....;
+
+
+
+
+

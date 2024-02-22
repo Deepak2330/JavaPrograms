@@ -1,0 +1,30 @@
+Abstract classes are not Interfaces. 
+--------------------------------------
+An abstract class must have an abstract method.
+Abstract classes can have Constructors, Member variables and Normal methods.
+Abstract classes are never instantiated.
+When you extend Abstract class with abstract method, you must define the abstract method in the child class, or make the child class abstract.
+
+Abstraction is an important feature of OOPS. It means hiding complexity. Abstract class is used to provide abstraction. Although it does not provide 100% abstraction because it can also have concrete method. Lets see how abstract class is used to provide abstraction.
+
+abstract class Vehicle
+{
+   public abstract void engine();  //abstract method
+}
+public class Car extends Vehicle
+ {
+    
+    public void engine()
+    {
+        System.out.println("Car engine");
+        //car engine implementation
+    }
+    
+    public static void main(String[] args)
+    {
+        Vehicle v = new Car();
+        v.engine();
+        
+    }
+}
+

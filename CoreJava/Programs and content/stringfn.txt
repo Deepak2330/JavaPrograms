@@ -1,0 +1,80 @@
+Conversion from strings to primitive types
+------------------------------------------
+String to Integer,Long,FLoat,Double
+
+1. String to Integer data
+
+a)Integer variable=Integer.parseInt(String);
+b)Integer variable=Integer.valueOf(String);
+
+int n, String s="25";
+n=Integer.parseInt(s);
+
+(or)
+
+n=Integer.valueOf(s);
+
+
+2. String to Long data
+   -------------------
+
+a)Long variable=Long.parseLong(String);
+b)Long variable=Long.valueOf(String);
+
+long n, String s="2589898";
+n=Integer.parseInt(s);
+
+(or)
+
+n=Integer.valueOf(s);
+
+
+Conversion from primitive types to strings
+------------------------------------------
+
+
+1.Integer type data to String type
+
+eg: int n=23;
+    String s;
+s=Integer.toString(n);
+
+2.Float type data to String type
+
+eg:float n=23.56; 
+   String s;
+s=Long.toString(n);
+
+
+int a;
+int b;
+
+reverse()
+setCharAt()
+insert()
+delete()
+setLength()
+
+String StringBuffer
+
+
+StringBuffer sb=new StringBuffer();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

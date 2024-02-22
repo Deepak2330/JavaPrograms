@@ -1,0 +1,88 @@
+Module-I Answers
+
+1.SELECT cust_id, cust_fname, initials, cust_lname
+FROM bank_customer
+WHERE cust_sex = 'F'
+AND initials IS NOT NULL;
+
+2. SELECT cust_id, cust_phone, cust_addr_line1, cust_addr_line2, cust_city, cust_state, cust_pin
+FROM bank_cust_contact
+WHERE contact_type = 'HOME'
+AND (cust_state = 'Karnataka'
+OR cust_state = 'Tamilnadu');
+
+3. SELECT account_no, primary_cust_id, curr_bal_amt, start_date
+FROM bank_sb_account
+WHERE acc_status = 'Active'
+ORDER BY start_date DESC;
+
+4. SELECT designation, bank_emp_id, emp_name, emp_sex
+FROM bank_employee
+WHERE manager_id IS NOT NULL
+ORDER BY designation DESC, emp_name;
+
+Module-II
+---------
+1. SELECT cust_id, UPPER(cust_fname), UPPER(cust_lname), 
+TO_CHAR(cust_dob, 'DD-Mon') AS dob
+FROM bank_customer c
+WHERE cust_sex = 'F';
+
+2. SELECT trans_dt, SUBSTR(trans_desc, 1, 20) AS trans_desc, trans_amt
+FROM bank_transaction
+WHERE trans_type = 'CR'
+AND TO_CHAR(trans_dt, 'Mon-YYYY') = 'Jun-2010';
+
+3. SELECT trans_dt, trans_acc_no, trans_desc, trans_amt, 
+DECODE(trans_type, 'CR', 'Credit', 'DB', 'Debit') AS trans_type
+FROM bank_transaction
+WHERE trans_amt> 10000
+AND trans_desc NOT LIKE 'RD %'
+ORDER BY trans_type, trans_dt DESC;
+
+Module-III
+----------
+1.CREATE INDEX dob_indx ON bank_customer(cust_dob);
+
+2. CREATE SEQUENCE cust_seq
+START WITH 2001
+INCREMENT BY 1 NOCYCLE;
+
+
+Module-IV
+---------
+1. 
+
+CREATE OR REPLACE FUNCTION CalcInterest
+(p_principal NUMBER, p_term NUMBER, p_intrate NUMBER) 
+RETURN NUMBER AS
+v_interest NUMBER;
+BEGIN
+v_interest := (p_principal * p_term * p_intrate) / 100;
+ RETURN v_interest;
+END;
+
+2.
+
+Display details of a given customer id, say 1005
+DECLARE
+v_cust_idBank_Customer.cust_id%TYPE := 1005;
+v_cust_fnameBank_Customer.cust_fname%TYPE;
+v_cust_lnameBank_Customer.cust_lname%TYPE;
+v_cust_phoneBank_Cust_Contact.cust_phone%TYPE;
+v_cust_cityBank_Cust_Contact.cust_city%TYPE;
+v_cust_stateBank_Cust_Contact.cust_state%TYPE;
+BEGIN
+  SELECT cust_fname, cust_lname, cust_phone, cust_city, cust_state
+  INTO v_cust_fname, v_cust_lname, v_cust_phone, v_cust_city, v_cust_state
+  FROM Bank_Customer c, Bank_Cust_contact cc
+  WHERE cc.contact_type = 'HOME'
+  AND c.cust_id = cc.cust_id
+  AND c.cust_id = v_cust_id;
+dbms_output.put_line('Cust id: ' || v_cust_id || 
+  ' First name: ' || v_cust_fname || ' Last name: ' ||  v_cust_lname);
+dbms_output.put_line('Phone: ' || v_cust_phone || ' City: ' ||    v_cust_city || ' State: ' || v_cust_state);
+END;
+
+
+
